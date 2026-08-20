@@ -71,7 +71,7 @@ jobs:
       - name: Huella del archivo
         run: sha256sum mi-peso.apk | tee mi-peso.apk.sha256
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v7
         with:
           name: mi-peso-apk
           path: |
