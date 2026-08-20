@@ -19,7 +19,7 @@ jobs:
       # `secrets` no se puede evaluar directamente en un `if` de paso.
       HAY_FIRMA: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v5
         with:
